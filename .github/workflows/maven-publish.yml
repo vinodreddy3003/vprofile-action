@@ -63,8 +63,8 @@ jobs:
       - name: Build & Upload image to ECR
         uses: appleboy/docker-ecr-action@master
         with:
-         access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-         secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+         access_key: AKIAVRUVRO4PAKMCV2OW
+         secret_key: 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
          registry: ${{ secrets.REGISTRY_STATE }}
          repo: ${{ env.ECR_REPOSITORY }}
          region: ${{ env.AWS_REGION }}
